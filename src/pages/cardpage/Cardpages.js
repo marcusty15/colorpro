@@ -29,7 +29,7 @@ return (
       <div className="container">
         <img className="img" src={img} alt=""/>
       <form className=" m-4  buscador" role="search">
-        <h5 className="h5busc">Buscador:</h5>
+        <h5 className="h5busc">Bienvenidos al sistema de rastreo de pedidos porfavor ingresa su numero de pedido:</h5>
         <input className="form-control buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
       </form>
       
