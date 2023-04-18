@@ -23,8 +23,8 @@ const CardDetalles = (props) => {
       const {name} = details
   return (
     <div>
-        <div>
-      <div class="card" >
+        <div className='container m-5'>
+      <div class="card mt-5" >
         
         <div class="card-body">
             <h1>SU PEDIDO ESTA:</h1>

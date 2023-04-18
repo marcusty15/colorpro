@@ -17,9 +17,7 @@ const [search, setSearch] = useState('')
     console.log(response.data);
   };
 
-  useEffect(() => {
-    obtenerRecursos();
-  }, {});
+ 
  const cardsencontrada = !search ? cards : cards.filter((personaje) => (personaje.name.toLowerCase().includes(search.toLowerCase())));
  
 
@@ -31,13 +29,14 @@ return (
       <form className=" m-4  buscador" role="search">
         <h5 className="h5busc">Bienvenidos al sistema de rastreo de pedidos porfavor ingresa su numero de pedido:</h5>
         <input className="form-control buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
+        <button  type="button" onClick={obtenerRecursos} className="btn btn-primary boton">Buscar</button>
       </form>
       
         <div className="d-flex flex-wrap justify-content-between cardss  ">
           {cardsencontrada.length > 0 ? (
             cardsencontrada.map((vape) => <Cards key={vape.id} {...vape} />)
           ) : (
-            <p>cargando</p>
+            <p className="load">cargando</p>
           )}
         </div>
       </div>
