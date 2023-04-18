@@ -15,7 +15,7 @@ const Cards = (props) => {
       <div class="card mb-5 border-primary" >
       <div className="container">
         <div class="card-body">
-        <Link className="link" to={`/detalles/${id}`}><h5 className="card-title h">{name}</h5></Link>
+        <Link className="link" to={`/detalles/${id}`}><h5 className="card-title text-center h">{name}</h5></Link>
          
           
        

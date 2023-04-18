@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Cards from "../../Componet/Cards/Cards";
 import './Cardpage.css'
+import img from '../../img/color.jpg'
 
 const Cardpages = () => {
   const [cards, setCards] = useState([]);
@@ -25,13 +26,14 @@ const [search, setSearch] = useState('')
    
 return (
     <>
-      <div>
+      <div className="container">
+        <img className="img" src={img} alt=""/>
       <form className=" m-4  buscador" role="search">
         <h5 className="h5busc">Buscador:</h5>
-        <input className="form-control buscador border-primary me-2" type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
+        <input className="form-control buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
       </form>
       
-        <div className="d-flex flex-wrap justify-content-between  m-5">
+        <div className="d-flex flex-wrap justify-content-between cardss  ">
           {cardsencontrada.length > 0 ? (
             cardsencontrada.map((vape) => <Cards key={vape.id} {...vape} />)
           ) : (
