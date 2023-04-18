@@ -26,8 +26,9 @@ const [search, setSearch] = useState('')
 return (
     <>
       <div>
-      <form className="d-flex m-4 w-75 buscador" role="search">
-        <input className="form-control buscador border-primary me-2" type="search" placeholder="Coloca tu Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
+      <form className=" m-4  buscador" role="search">
+        <h5 className="h5busc">Buscador:</h5>
+        <input className="form-control buscador border-primary me-2" type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
       </form>
       
         <div className="d-flex flex-wrap justify-content-between  m-5">
