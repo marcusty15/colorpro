@@ -24,7 +24,7 @@
   }
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 395px) {
     .buscador{
      margin-left: -13px;
      height: 60px;
