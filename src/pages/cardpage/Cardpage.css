@@ -23,3 +23,21 @@
     margin-left: 50px;
   }
   }
+
+  @media only screen and (max-width: 390px) {
+    .buscador{
+     margin-left: -13px;
+     height: 60px;
+     width: 350px;
+    }
+   .h5busc{
+     margin-left: 150px;
+   }
+   .img{
+     width: 100%;
+   }
+   .cardss{
+     margin-top: 100px;
+     margin-left: 10px;
+   }
+   }
