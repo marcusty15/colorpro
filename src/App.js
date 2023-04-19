@@ -5,6 +5,7 @@ import './App.css';
 import Cards from './Componet/Cards/Cards';
 import Cardpages from './pages/cardpage/Cardpages';
 import Detalles from './pages/detalles/Detalles';
+import Footer from './Componet/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/detalles/:id' element={<Detalles/>}/>
 
     </Routes>
+    <Footer/>
       
     </>
   );

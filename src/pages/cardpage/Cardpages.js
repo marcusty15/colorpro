@@ -27,18 +27,21 @@ return (
       <div className="container">
         <img className="img" src={img} alt=""/>
       <form className=" m-4  buscador" role="search">
-        <h5 className="h5busc">Bienvenidos al sistema de rastreo de pedidos porfavor ingresa su numero de pedido:</h5>
+        <h5 className="h5busc">Bienvenidos al sistema de rastreo de pedidos por favor ingresa su numero de pedido:</h5>
         <input className="form-control buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
-        <button  type="button" onClick={obtenerRecursos} className="btn btn-primary boton">Buscar</button>
+        <button  type="button" onClick={obtenerRecursos} className="shadow btn btn-primary boton">Buscar</button>
       </form>
       
         <div className="d-flex flex-wrap justify-content-between cardss  ">
           {cardsencontrada.length > 0 ? (
             cardsencontrada.map((vape) => <Cards key={vape.id} {...vape} />)
           ) : (
-            <p className="load">cargando</p>
+            <p className="load"></p>
           )}
         </div>
+        
+        <h3 className="h3contact container">Si tienes alguna duda o no sabes tu numero de pedido, contáctenos haciendo click en el siguiente botón</h3>
+        <button type="button" class="btn btn-success boton whats shadow">WhatsApp</button>
       </div>
     </>
   );
