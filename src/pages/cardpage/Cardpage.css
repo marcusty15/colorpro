@@ -82,7 +82,7 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     .img{
-      width: 100%;
+      width: 90%;
     }
     .cardss{
       margin-top: 200px;
@@ -94,8 +94,8 @@
     .h3contact{
      font-size: 20px;
      text-align:justify;
-     width: 120%;
-     
+     width: 80%;
+     margin-left: 10px;
      font-family: Arial, Helvetica, sans-serif;
     }
     .whats{
