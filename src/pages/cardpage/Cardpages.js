@@ -24,12 +24,17 @@ const [search, setSearch] = useState('')
    
 return (
     <>
-      <div className="container row justify-content-center w-100 ">
-        <img className="img col-auto" src={img} alt=""/>
+      <div className="container d-flex row text-center justify-content-center w-100 ">
+        <div className="all">
+
+        </div>
+        <img className="img " src={img} alt=""/>
       <form className=" m-4 buscador text-center w-100 " role="search">
-        <h5 className="h5busc col-auto text-center">Bienvenidos al sistema de rastreo de pedidos por favor ingresa su numero de pedido:</h5>
-        <input className="form-control col-auto w-100 buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
-        <button  type="button" onClick={obtenerRecursos} className="shadow  btn   btn-primary  boton">Buscar</button>
+        <h5 className="h5busc  text-center">Bienvenidos al sistema de rastreo de pedidos por favor ingresa su numero de pedido:</h5>
+        <div class="input-group mb-3">
+  <input  onChange={e=>setSearch(e.target.value)} type="number" class="form-control border-primary " placeholder="Nombre de Pedido" aria-label="Nombre de usuario del destinatario" aria-describedby="button-addon2"/>
+  <button onClick={obtenerRecursos} class="btn btn-primary btn-outline-light" type="button" id="button-addon2">Buscar</button>
+</div>
       </form>
       
         <div className="d-flex col-auto flex-wrap justify-content-between cardss  ">
@@ -39,7 +44,7 @@ return (
             <p className="load"></p>
           )}
         </div>
-        <div className="d-flex row w-100 justify-content-center text-center">
+        <div className=" w-100 justify-content-center text-center">
            <h3 className="h3contact  ">Si tienes alguna duda o no sabes tu numero de pedido, contáctenos haciendo click en el siguiente botón</h3>
             <a className="text-center" href="https://wa.link/5i79eu"><button type="button" class="btn btn-success  boton whats shadow">WhatsApp</button></a>
         </div>
