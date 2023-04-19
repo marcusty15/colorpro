@@ -6,3 +6,9 @@ color: black;
     width: 350px;
     
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .card{
+        width: 310px!important;
+        
+    }
+}
