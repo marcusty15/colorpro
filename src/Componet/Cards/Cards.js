@@ -14,14 +14,10 @@ const Cards = (props) => {
               
       <div class="card mb-5 border-primary" >
       <div className="container">
-        <div class="card-body">
-        <Link className="link" to={`/detalles/${id}`}><h5 className="card-title text-center h">{name}</h5></Link>
-         
-          
-       
-          
-         
-        </div>
+      <Link className="link" to={`/detalles/${id}`}><div class="card-body">
+        <h5 className="card-title text-center h">{name}</h5>
+         <h4 className="h4c">PRESIONAME</h4>
+        </div></Link>
         </div>
       </div>
     </div>

@@ -3,12 +3,16 @@ text-decoration: none;
 color: black;
 }
 .card{
-    width: 350px;
+    width: 250px;
     
+}
+.h4c{
+    color: blue;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .card{
-        width: 310px!important;
+        width: 270px!important;
+    
         
     }
 }

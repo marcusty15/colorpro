@@ -37,7 +37,7 @@ return (
 </div>
       </form>
       
-        <div className="d-flex col-auto flex-wrap justify-content-between cardss  ">
+        <div className="d-flex  flex-wrap justify-content-between cardss  ">
           {cardsencontrada.length > 0 ? (
             cardsencontrada.map((vape) => <Cards key={vape.id} {...vape} />)
           ) : (
