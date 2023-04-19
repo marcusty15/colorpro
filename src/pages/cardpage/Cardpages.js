@@ -41,7 +41,7 @@ return (
         </div>
         
         <h3 className="h3contact container">Si tienes alguna duda o no sabes tu numero de pedido, contáctenos haciendo click en el siguiente botón</h3>
-        <button type="button" class="btn btn-success boton whats shadow">WhatsApp</button>
+        <a href="https://wa.link/5i79eu"><button type="button" class="btn btn-success boton whats shadow">WhatsApp</button></a>
       </div>
     </>
   );
