@@ -24,24 +24,25 @@ const [search, setSearch] = useState('')
    
 return (
     <>
-      <div className="container">
-        <img className="img" src={img} alt=""/>
-      <form className=" m-4  buscador" role="search">
-        <h5 className="h5busc">Bienvenidos al sistema de rastreo de pedidos por favor ingresa su numero de pedido:</h5>
-        <input className="form-control buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
-        <button  type="button" onClick={obtenerRecursos} className="shadow btn btn-primary boton">Buscar</button>
+      <div className="container row justify-content-center w-100 ">
+        <img className="img col-auto" src={img} alt=""/>
+      <form className=" m-4 buscador text-center w-100 " role="search">
+        <h5 className="h5busc col-auto text-center">Bienvenidos al sistema de rastreo de pedidos por favor ingresa su numero de pedido:</h5>
+        <input className="form-control col-auto w-100 buscador border-primary me-2 " type="search" placeholder=" Nombre o numero de pedido" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
+        <button  type="button" onClick={obtenerRecursos} className="shadow  btn   btn-primary  boton">Buscar</button>
       </form>
       
-        <div className="d-flex flex-wrap justify-content-between cardss  ">
+        <div className="d-flex col-auto flex-wrap justify-content-between cardss  ">
           {cardsencontrada.length > 0 ? (
             cardsencontrada.map((vape) => <Cards key={vape.id} {...vape} />)
           ) : (
             <p className="load"></p>
           )}
         </div>
-        
-        <h3 className="h3contact container">Si tienes alguna duda o no sabes tu numero de pedido, contáctenos haciendo click en el siguiente botón</h3>
-        <a href="https://wa.link/5i79eu"><button type="button" class="btn btn-success boton whats shadow">WhatsApp</button></a>
+        <div className="d-flex row w-100 justify-content-center text-center">
+           <h3 className="h3contact  ">Si tienes alguna duda o no sabes tu numero de pedido, contáctenos haciendo click en el siguiente botón</h3>
+            <a className="text-center" href="https://wa.link/5i79eu"><button type="button" class="btn btn-success  boton whats shadow">WhatsApp</button></a>
+        </div>
       </div>
     </>
   );

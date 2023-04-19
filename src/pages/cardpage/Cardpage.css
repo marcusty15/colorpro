@@ -1,10 +1,4 @@
-.buscador{
-    margin-left: 400px;
-    width: 60%;
-}
-.h5busc{
-    margin-left: 450px;
-  }
+
 
 /* @media only screen and (max-width: 450px) {
    .buscador{
@@ -70,8 +64,9 @@
    } */
 
    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
     .buscador{
-      margin-left: -13px;
+   
       height: 60px;
       width: 330px;
      }
@@ -86,26 +81,28 @@
     }
     .cardss{
       margin-top: 200px;
-      margin-left: 10px;
+      
     }
-    .boton{
-     margin-left: 33px;
-    }
+    
     .h3contact{
+      
+   
      font-size: 20px;
-     text-align:justify;
-     width: 80%;
-     margin-left: 10px;
+     margin-top: 200px;
+    
+    
+     
      font-family: Arial, Helvetica, sans-serif;
     }
     .whats{
-     margin-left: 50px!important;
+      justify-content: center!important;
      margin-bottom: 100px;
+     justify-content: center;
     }
     .boton{
       margin-top: 30px;
       margin-bottom: 20px;
       width: 250px;
-      margin-left: 30px;
+      
     }
   }
