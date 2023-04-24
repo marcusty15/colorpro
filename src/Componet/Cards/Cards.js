@@ -16,7 +16,7 @@ const Cards = (props) => {
       <div className="container">
       <Link className="link" to={`/detalles/${id}`}><div class="card-body">
         <h5 className="card-title text-center h">{name}</h5>
-         <h4 className="h4c">PRESIONAME</h4>
+         <h4 className="h4c">Haz Click</h4>
         </div></Link>
         </div>
       </div>
